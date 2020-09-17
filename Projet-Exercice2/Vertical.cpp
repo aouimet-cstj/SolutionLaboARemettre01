@@ -1,4 +1,4 @@
-// But : Écrire un programme qui prend comme entrée un nombre de cinq chiffres ensuite il doit vérifier si le nombre contient bien 5 chiffres et doit afficher chaque chiffre sur diffrente ligne de haut en bas 
+// But : Ã‰crire un programme qui prend comme entrÃ©e un nombre de cinq chiffres ensuite il doit vÃ©rifier si le nombre contient bien 5 chiffres et doit afficher chaque chiffre sur diffrente ligne de haut en bas 
 // Auteur : Arnaud Ouimet
 // Date : 2020-09-13
 
@@ -10,7 +10,7 @@ int main()
 {
 	setlocale(LC_ALL, "");                 // Pour convertir correctement les accents dans la console
 
-	// Déclaration des variables nécessaire au programme
+	// DÃ©claration des variables nÃ©cessaire au programme
 	int nb1;
 	
 
@@ -27,9 +27,11 @@ int main()
 	}
 
 	// Si l'entier est > 9 999 ou < que 99 999 le nombre va s'afficher verticalement 
+	// KM : Encore lÃ  pas besoin de faire ce test car le else le garantit dÃ©jÃ 
 	else if (nb1 > 9999 || nb1 < 99999)
-	// Pour séparer les chiffres verticalement 
+	// Pour sÃ©parer les chiffres verticalement 
 	{
+		// KM : TRÃ¨s bons calculs
 		cout << nb1 / 10000 << " \n";    
 		nb1 = nb1 % 10000;                // On divise la valeur du nb1 par 10000
 		cout << nb1 / 1000 << " \n";
@@ -42,13 +44,13 @@ int main()
 		
 	}
 
-	_getch();       // commande qui enlève le texte Windows (Ça fait plus beau)
+	_getch();       // commande qui enlÃ¨ve le texte Windows (Ã‡a fait plus beau)
 
 	return 0;
 
 	//plan du test
 	/*
-	Entier       Résultat
+	Entier       RÃ©sultat
 
 	12345            1
                      2
